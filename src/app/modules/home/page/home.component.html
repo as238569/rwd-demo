@@ -1,0 +1,109 @@
+<div class="content">
+   
+    <table>
+        <col width="50%">
+        <col width="50%">
+        <tr>
+            <td class="title" colspan="2"><strong>活動消息:</strong></td>
+        </tr>
+        <tr>
+            <td colspan="2" >
+                <div style="margin-top: 50px; margin-bottom: 50px; display: flex; flex-direction: row;flex-wrap:wrap; justify-content:space-evenly;">
+                    <a href="#shareholder" style="margin-top: 25px;">
+                        <svg  width="250px" height="150px">
+                            <circle cx="50%" cy="50%" r="70" stroke="black" stroke-width="1" fill="none" />
+                            <text x="50%" y="50%" style="text-anchor: middle; dominant-baseline:middle;">一般股東</text>
+                        </svg>  
+                    </a>
+                    <a href="#institution" style="margin-top: 25px;">
+                        <svg  width="250px" height="150px">
+                            <circle cx="50%" cy="50%" r="70" stroke="black" stroke-width="1" fill="none" />
+                            <text x="50%" y="45%" style="text-anchor: middle; dominant-baseline:middle;">
+                                <tspan x = "50%" dy="0">發行公司・</tspan>
+                                <tspan x = "50%" dy="20">股務代理機構</tspan>
+                            </text>
+                        </svg>
+                    </a>
+                    <a href="#corporation" style="margin-top: 25px;">
+                        <svg width="250px" height="150px"> 
+                            <circle cx="50%" cy="50%" r="70" stroke="black" stroke-width="1" fill="none" />
+                            <text x="50%" y="50%" style="text-anchor: middle; dominant-baseline:middle;"> 專業機構法人</text>
+                        </svg>
+                    </a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="botton1"><a href="#newbie"><strong>新手上路</strong></a></td>
+            <td class="botton1"><a href="#firstSetting"><strong>首次使用設定</strong></a></td>
+            
+        </tr>
+        <tr>
+            <td class="botton2" colspan="2"><a href="#newbie"><strong>新手上路</strong></a></td>         
+        </tr>
+        <tr>
+            <td class="botton2" colspan="2"><a href="#firstSetting"><strong>首次使用設定</strong></a></td>   
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div class="tab">
+                    <button class="tab">股東會資訊</button>
+                    <div class="tab2">
+                        <div class="query">
+                            <div>
+                                <div>資料排序方式&nbsp;:</div>
+                                <div><input [(ngModel)]="inputText1"><button (click) ="OnSortClick()">查詢</button></div>
+                            </div>
+                            <div>
+                                <div>搜尋股東會&nbsp;:</div>
+                                <div><input [(ngModel)]="inputText2"><button (click)="OnSerchClick()">查詢</button></div>
+                            </div>
+                            <app-grid [ColumnSource]="myColumn" [DataSource] ="myData" [SortColumn] ="sortColumn" [FilterData]="serchData"></app-grid>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center;">
+                    <div class="moreInfo1">
+                        <a href="#shareholder">
+                            <img class="navstyle" width="100%" src ="assets/images/icon-service-001.jpg"> 
+                        </a>
+                        <a href="#shareholder">
+                            <img class="navstyle" width="100%" src ="assets/images/icon-service-002.jpg"> 
+                        </a>
+                        <a href="#shareholder">
+                            <img class="navstyle" width="100%" src ="assets/images/icon-service-003.jpg"> 
+                        </a>
+                        <a href="#shareholder">
+                            <img class="navstyle" width="100%" src ="assets/images/icon-service-004.jpg"> 
+                        </a>
+                        <a href="#shareholder">
+                            <img class="navstyle" width="100%" src ="assets/images/icon-service-005.jpg"> 
+                        </a>
+                        <a href="#shareholder">
+                            <img class="navstyle" width="100%" src ="assets/images/icon-service-006.jpg"> 
+                        </a>
+                    </div>
+
+                    <div class="moreInfo2">
+                        <div>
+                            <div style="display: inline-block; text-align: left; width: 70%; height: 50px;">
+                                <strong style="font-size:x-large;">相關網站</strong>
+                            </div>
+                            <div style="display: inline-block;">
+                                <a href="#more">more</a>
+                            </div>
+                            <div style="text-align: left;">
+                                <a  style="display: block;" href="#more">金融監督管理委員會</a>
+                                <a  style="display: block;" href="#more">臺灣證券交易所</a>
+                                <a  style="display: block;" href="#more">臺灣期貨交易所</a>
+                                <a  style="display: block;" href="#more">證券櫃檯買賣中心</a>
+                                <a  style="display: block;" href="#more">臺灣集保結算所</a>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table> 
+</div>

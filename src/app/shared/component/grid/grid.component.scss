@@ -1,0 +1,38 @@
+table{
+    border-collapse: collapse;
+    width:100%;
+}
+
+tr{
+    text-align: left;
+    border-bottom: 1px solid rgb(119, 119, 119);
+
+    th ,td {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    tr{
+        display:block;
+        border-style:solid;    
+        border-color:rgb(149,152,154);
+        border-width:1px;
+        margin-top: 10px;
+        padding-top: 10px;
+
+        th, td  {
+            display:inline-block;
+            white-space: nowrap;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 15px;
+
+        }
+    }
+    
+    table :first-child{
+        border-style:none; 
+    }
+}

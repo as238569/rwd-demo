@@ -1,0 +1,39 @@
+footer {
+    border-style:solid;    
+    border-color:rgb(149,152,154);
+    border-width:1px;   
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 0px 10px 50px;
+}
+
+div.info {   
+    margin: 10px 25px 10px 0px;
+    div{
+        font-size: 15px;
+        color: rgb(149,152,154);
+    }
+}
+
+div.line{
+    margin: 0px 80px 0px 0px;
+    hr {
+        background-color: rgb(149,152,154);
+        height: 75px;
+        width: 0px;
+    }
+}
+
+div.imageList{
+    img { 
+        margin: 0px 70px 0px 0px;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    div.line{        
+        display: none;
+    }
+}

@@ -1,0 +1,15 @@
+<div>
+    <table (window:resize) = "OnResize()">
+        <tr>
+            <th *ngFor="let column of myColumns;let colIndex = index"  [width] ="colWidth[colIndex]">
+               <span  #measure> {{column}}</span>
+            </th>
+        </tr>
+
+        <tr *ngFor="let rowData of displayData" >           
+            <td  *ngFor="let column of myColumns;let colIndex = index" [width] ="colWidth[colIndex]">
+                <span #measure>{{rowData[column]}}</span>
+            </td>
+        </tr>
+    </table> 
+</div>
